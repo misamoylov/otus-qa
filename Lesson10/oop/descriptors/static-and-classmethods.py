@@ -2,9 +2,15 @@ from datetime import date as dt
 
 
 class Employee:
+    idCounter = 0
+    # A student ID from generator
+    idGenerator = (x for x in range(0xAAAAAA, 0xEEEEEE, 0xBA))
+
     def __init__(self, name, age):
         self.name = name
         self.age = age
+        Employee.idCounter += 1
+        self.id = Employee.idGenerator.__next__()
 
     def say_hello(self):
         print("Hello, my name is {}".format(self.name))
@@ -32,3 +38,9 @@ print(e2)
 print(Employee.isAdult(25))
 print(Employee.isAdult(16))
 print(e1.__dict__)
+
+allEmployees = []  # List of employees
+for number in range(25):
+    newEmp = Employee("Employee-{}".format(number), number)
+    allEmployees.append(newEmp)
+    print(newEmp.name)
