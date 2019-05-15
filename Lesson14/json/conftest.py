@@ -33,6 +33,7 @@ def pytest_runtest_makereport(item, call):
             'herp': 'derp'
         }
 
+
 @pytest.fixture(scope="session")
 def environment_info():
     os_platform = platform.platform()
