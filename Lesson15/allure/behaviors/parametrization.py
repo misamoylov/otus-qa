@@ -24,4 +24,3 @@ def test_parametrize_with_two_parameters(param1, param2):
 def test_parameterize_with_uneven_value_sets(param1, param2, param3):
     simple_step(param1, param3)
     simple_step(param2)
-    

@@ -1,5 +1,7 @@
 import allure
 
+# $ pytest tests.py --allure-severities normal,critical
+
 
 def test_with_no_severity_label():
     pass

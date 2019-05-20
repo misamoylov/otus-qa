@@ -34,6 +34,7 @@ def test_with_epic_1():
 def test_with_story_1():
     pass
 
+
 @allure.story('story_2')
 def test_with_story_2():
     pass

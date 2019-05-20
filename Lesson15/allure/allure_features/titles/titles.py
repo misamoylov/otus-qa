@@ -2,6 +2,7 @@ import allure
 import pytest
 
 
+
 @allure.title("This test has a custom title")
 def test_with_a_title():
     assert 2 + 2 == 4
