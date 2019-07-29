@@ -4,7 +4,7 @@ from mock import patch
 import requests
 import unittest
 
-from Lesson32.example4.main import api
+from Lesson32.example_basic.main import api
 
 
 class TetsApi(unittest.TestCase):
